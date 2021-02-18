@@ -1915,13 +1915,22 @@ input, select, textarea {
 		}
 
 		#header h1 {
-			font-family: 'Arvo';
+			font-family: Arial, Helvetica, sans-serif;
 			font-weight: 700;
-			color: #ed786a;
+			color: #cf3322;
 			text-shadow: 0.05em 0.075em 0 rgba(0, 0, 0, 0.1);
-			font-size: 3em;
+			font-size: 5em;
 			letter-spacing: 13px;
-		}
+			animation:blinking 3.5s infinite;
+			}
+			@keyframes blinking{
+			0%{   color: red;   }
+			47%{   color: rgb(175, 36, 36); }
+			62%{   color: transparent; }
+			97%{   color:transparent; }
+			100%{  color: rgb(196, 37, 37);   }
+			}
+		
 
 			#header h1 a {
 				border: 0;
